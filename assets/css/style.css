@@ -5,6 +5,11 @@
  *   Copyright 2014 Webapplayers.com
  *
 */
+
+
+
+
+
 h1,
 h2,
 h3,
@@ -398,6 +403,11 @@ body.fixed-sidebar.mini-navbar .nav-label,
 body.fixed-sidebar.mini-navbar .navbar-default .nav li a span {
   display: inline;
 }
+
+
+
+
+
 .fixed-sidebar.mini-navbar .nav-second-level li a {
   padding: 7px 10px 7px 52px;
 }
@@ -1667,16 +1677,20 @@ table.dataTable thead .sorting:after {
 }
 .form-control,
 .single-line {
-  background-color: #FFFFFF;
+  background-color: #2C5F4E;
   background-image: none;
-  border: 1px solid #e5e6e7;
+  border: none;
   border-radius: 1px;
-  color: inherit;
+
   display: block;
-  padding: 6px 12px;
+  padding: 11px 30px;
+  margin-top: 30px;
   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
   width: 100%;
+  height: 10%;
   font-size: 14px;
+  color: #FFFFFF;
+  border-radius: 20px;
 }
 .form-control:focus,
 .single-line:focus {
