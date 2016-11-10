@@ -6,12 +6,32 @@
  *
 */
 
+#signUpHr{
+  margin: 30px 0px;
+}
+
 #LoginBtn{
   border-radius: 20px;
   padding: 11px 30px;
   background-color: #02C06B;
+  border: none;
+  font-size: 15px;
 }
 
+#SignupBtn{
+  border-radius: 20px;
+  padding: 11px 30px;
+  background-color: transparent;
+  border-color: #02C06B;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+#fp{
+  text-align: right;
+  margin-left: 90px;
+  font-size: 1.1em;
+}
 h1,
 h2,
 h3,
@@ -1679,7 +1699,7 @@ table.dataTable thead .sorting:after {
 }
 .form-control,
 .single-line {
-  background-color: #2C5F4E;
+  background-color: rgba(3, 184, 103, 0.3);;
   background-image: none;
   border: none;
   border-radius: 1px;
@@ -2725,6 +2745,7 @@ body {
   font-size: 13px;
   color: #676a6c;
   overflow-x: hidden;
+  width: 100%;
 }
 body.boxed-layout {
   background: url('patterns/shattered.png');
