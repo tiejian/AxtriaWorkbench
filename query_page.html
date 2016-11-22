@@ -21,9 +21,9 @@
 
     <div id="wrapper">
 
-    <nav class="navbar-default navbar-static-side" role="navigation" id="side-menu">
+    <nav class="navbar-default navbar-static-side" role="navigation">
         <div class="sidebar-collapse">
-            <ul class="nav">
+            <ul class="nav" id="side-menu">
                 <li class="nav-header">
                     <div align="center">
                             <span>
@@ -33,22 +33,18 @@
                     </div>
                 </li>
                 <li class="active">
-                    <a href="query_page.html"><i class="fa fa-database"></i> <span class="nav-label">Query</span></a>
+                    <a href="#"><i class="fa fa-database"></i> <span class="nav-label">Query</span></a>
                 </li>
                 <li>
-                    <a href="report_page.html"><i class="fa fa-table"></i> <span class="nav-label">Report</span></a>
+                    <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Report</span></a>
                 </li>
                 <li>
-                    <a href="graph_page.html"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graph</span></a>
+                    <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graph</span></a>
                 </li>
-
-
                 <li>
                     <a href="login.html"><i class="fa fa-sign-out"></i> <span class="nav-label">Logout</span></a>
                 </li>
-                <li>
-                    <a href="#"><i class="fa fa-question-circle"></i> <span class="nav-label">Support</span></a>
-                </li>
+
 
 
             </ul>
@@ -61,21 +57,16 @@
         <nav class="navbar navbar-static-top  " role="navigation" style="margin-bottom: 0">
         <div class="navbar-header">
             <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-
         </div>
-        <div class="nav navbar-top-links navbar-right" id="logo-small">
-            <img src="img/logo-small.png"/>
-        </div>
-
 
         </nav>
         </div>
 
-        <div class="wrapper wrapper-content animated fadeInRight">
+
           <div class="row">
               <div class="col-lg-12">
                   <div class="ibox float-e-margins">
-                      <div class="ibox-content" >
+                      <div class="ibox-content">
 
                           <div class="table-responsive">
                               <table class="table table-striped" id="query-table">
@@ -87,7 +78,7 @@
                                   </tr>
                                   </thead>
                                   <tbody>
-                                  <tr id="query">
+                                  <tr>
                                       <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
                                       <td>Question 1: Lerem ipsum dolor sit amet,
 
@@ -192,14 +183,115 @@
                                       </td>
                                   </tr>
 
+                                  <tr>
+                                      <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
+                                      <td>Question 6: Lerem ipsum dolor sit amet,
 
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+
+                                        consectetur adipiscing elit
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+                                      </td>
+                                  </tr>
+
+                                  <tr>
+                                      <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
+                                      <td>Question 7: Lerem ipsum dolor sit amet,
+
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+
+                                        consectetur adipiscing elit
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+                                      </td>
+                                  </tr>
+
+                                  <tr>
+                                      <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
+                                      <td>Question 8: Lerem ipsum dolor sit amet,
+
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+
+                                        consectetur adipiscing elit
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+                                      </td>
+                                  </tr>
+
+                                  <tr>
+                                      <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
+                                      <td>Question 9: Lerem ipsum dolor sit amet,
+
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+
+                                        consectetur adipiscing elit
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+                                      </td>
+                                  </tr>
+
+                                  <tr>
+                                      <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
+                                      <td>Question 10: Lerem ipsum dolor sit amet,
+
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+
+                                        consectetur adipiscing elit
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+                                      </td>
+                                  </tr>
                                 </tbody>
                             </table>
 
 
-                            <div class="pull-right">
-                                <button type="button" class="btn btn-w-m btn-primary" id="submitBtn" onclick="window.location.href='report_page.html' ">Submit</button>
-                            </div>
+
 
 
 
@@ -212,15 +304,18 @@
               </div>
 
           </div>
-        </div>
 
-<!-- Fixed Footer Submit Btn
+
+
             <div class="footer fixed">
                 <div class="pull-right">
-                    <button type="button" class="btn btn-w-m btn-primary" id="submitBtn" onclick="window.location.href='report_page.html' ">Submit</button>
+                    <button type="button" class="btn btn-w-m btn-primary" id="submitBtn">Submit</button>
+                </div>
+                <div class="support">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i> Contact Axtria Support
                 </div>
             </div>
--->
+
         </div>
         </div>
 

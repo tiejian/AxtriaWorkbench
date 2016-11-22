@@ -21,9 +21,9 @@
 
     <div id="wrapper">
 
-    <nav class="navbar-default navbar-static-side" role="navigation" id="side-menu">
+    <nav class="navbar-default navbar-static-side" role="navigation">
         <div class="sidebar-collapse">
-            <ul class="nav">
+            <ul class="nav" id="side-menu">
                 <li class="nav-header">
                     <div align="center">
                             <span>
@@ -33,22 +33,16 @@
                     </div>
                 </li>
                 <li>
-                    <a href="query_page.html"><i class="fa fa-database"></i> <span class="nav-label">Query</span></a>
+                    <a href="#"><i class="fa fa-database"></i> <span class="nav-label">Query</span></a>
                 </li>
                 <li  class="active">
-                    <a href="report.html"><i class="fa fa-table"></i> <span class="nav-label">Report</span></a>
+                    <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Report</span></a>
                 </li>
                 <li>
-                    <a href="graph_page.html"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graph</span></a>
+                    <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graph</span></a>
                 </li>
-
-
-
                 <li>
                     <a href="login.html"><i class="fa fa-sign-out"></i> <span class="nav-label">Logout</span></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-question-circle"></i> <span class="nav-label">Support</span></a>
                 </li>
 
 
@@ -58,366 +52,241 @@
         </div>
     </nav>
 
-    <div id="page-wrapper" class="gray-bg">
-      <div class="row border-bottom">
-          <nav class="navbar navbar-static-top  " role="navigation" style="margin-bottom: 0">
-                <div class="navbar-header">
-                    <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-
-              </div>
-
-              <div class="nav navbar-top-links navbar-right" id="logo-small">
-                  <img src="img/logo-small.png"/>
-              </div>
-
-            </nav>
+        <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top  " role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
         </div>
 
-      <div class="wrapper wrapper-content animated fadeInRight">
-        <div class="row">
-          <!-- Data Table -->
-            <div class="col-lg-10">
-                <div class="ibox float-e-margins">
-                    <div class="ibox-content">
-                          <div class="table-responsive"  id="data-table">
-                              <table class="table table-striped">
-                                  <thead>
-                                  <tr>
-                                      <th>ENROID</th>
-                                      <th>INDEXDT</th>
-                                      <th>AGE</th>
-                                      <th>SEX</th>
-                                      <th>REGION</th>
-                                      <th>PLANTYP</th>
-                                      <th>EESTATU</th>
-                                      <th>DATASET</th>
-                                      <th>PREDIAGFN</th>
-                                      <th>PARAMETER</th>
-                                  </tr>
-                                  </thead>
-                                  <tbody>
-
-                                  <tr>
-                                      <td>#123456</td>
-                                      <td>123456</td>
-                                      <td>34</td>
-                                      <td>F</td>
-                                      <td>North</td>
-                                      <td>F1</td>
-                                      <td>abcd</td>
-                                      <td>abcd</td>
-                                      <td>abcd</td>
-                                      <td>abcd</td>
-                                  </tr>
-
-                                  <tr>
-                                    <td>#123456</td>
-                                    <td>123456</td>
-                                    <td>34</td>
-                                    <td>F</td>
-                                    <td>North</td>
-                                    <td>F1</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                  </tr>
-
-                                  <tr>
-                                    <td>#123456</td>
-                                    <td>123456</td>
-                                    <td>34</td>
-                                    <td>F</td>
-                                    <td>North</td>
-                                    <td>F1</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                  </tr>
-
-                                  <tr>
-                                    <td>#123456</td>
-                                    <td>123456</td>
-                                    <td>34</td>
-                                    <td>F</td>
-                                    <td>North</td>
-                                    <td>F1</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                  </tr>
-
-                                  <tr>
-                                    <td>#123456</td>
-                                    <td>123456</td>
-                                    <td>34</td>
-                                    <td>F</td>
-                                    <td>North</td>
-                                    <td>F1</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                  </tr>
-
-                                  <tr>
-                                    <td>#123456</td>
-                                    <td>123456</td>
-                                    <td>34</td>
-                                    <td>F</td>
-                                    <td>North</td>
-                                    <td>F1</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                  </tr>
-
-                                  <tr>
-                                    <td>#123456</td>
-                                    <td>123456</td>
-                                    <td>34</td>
-                                    <td>F</td>
-                                    <td>North</td>
-                                    <td>F1</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                  </tr>
-                                  <tr>
-                                    <td>#123456</td>
-                                    <td>123456</td>
-                                    <td>34</td>
-                                    <td>F</td>
-                                    <td>North</td>
-                                    <td>F1</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                  </tr>
-
-                                  <tr>
-                                    <td>#123456</td>
-                                    <td>123456</td>
-                                    <td>34</td>
-                                    <td>F</td>
-                                    <td>North</td>
-                                    <td>F1</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                  </tr>
-                                  <tr>
-                                    <td>#123456</td>
-                                    <td>123456</td>
-                                    <td>34</td>
-                                    <td>F</td>
-                                    <td>North</td>
-                                    <td>F1</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                  </tr>
-
-                                  <tr>
-                                    <td>#123456</td>
-                                    <td>123456</td>
-                                    <td>34</td>
-                                    <td>F</td>
-                                    <td>North</td>
-                                    <td>F1</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                    <td>abcd</td>
-                                  </tr>
-
-
-
-                                </tbody>
-                            </table>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            <!--Criteria Selection-->
-            <div class="col-lg-2">
-                <div class="ibox float-e-margins">
-                    <div class="ibox-content">
-                      <div class="table-responsive" id="criteria-table">
-                          <table class="table" id="criteria">
-                              <thead>
-                              <tr>
-                                  <th></th>
-                                  <th>Criteria</th>
-                              </tr>
-                              </thead>
-                              <tbody>
-
-                              <tr>
-                                <td><input type="checkbox" checked/></td>
-                                <td>ENROLID</td>
-                              <tr>
-
-                              <tr>
-                                <td><input type="checkbox" checked/></td>
-                                <td>INDEXDT</td>
-                              <tr>
-
-                              <tr>
-                                <td><input type="checkbox" checked/></td>
-                                <td>AGE</td>
-                              <tr>
-
-                              <tr>
-                                <td><input type="checkbox" checked/></td>
-                                <td>SEX</td>
-                              <tr>
-
-                              <tr>
-                                <td><input type="checkbox" checked/></td>
-                                <td>REGION</td>
-                              <tr>
-
-                              <tr>
-                                <td><input type="checkbox" checked/></td>
-                                <td>PLANTYP</td>
-                              <tr>
-
-                              <tr>
-                                <td><input type="checkbox" checked/></td>
-                                <td>EESTATU</td>
-                              <tr>
-
-                              <tr>
-                                <td><input type="checkbox" checked/></td>
-                                <td>DATASET</td>
-                              <tr>
-
-                              <tr>
-                                <td><input type="checkbox" checked/></td>
-                                <td>PREDIAG</td>
-                              <tr>
-                              <tr>
-                                <td><input type="checkbox" checked/></td>
-                                <td>PARAMET</td>
-                              <tr>
-
-
-
-
-
-
-
-
-                            </tbody>
-                        </table>
-                      </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-
+        </nav>
         </div>
-      </div>
 
 
-      <div class="wrapper wrapper-content animated fadeInRight">
           <div class="row">
-              <div class="col-lg-12" id="history-table">
+              <div class="col-lg-12">
                   <div class="ibox float-e-margins">
                       <div class="ibox-content">
 
-
-
-                        <!-- Queries history-->
                           <div class="table-responsive">
-                              <table class="table table-striped" >
+                              <table class="table table-striped" id="query-table">
                                   <thead>
                                   <tr>
 
-                                      <th><input type="checkbox" class="i-c hecks" ng-model="master" name="input[]"> </th>
-                                      <th><button type="button" class="btn btn-outline btn-danger" id="deleteBtn">Delete</button></th>
-                                      <th>Parameter</th>
-                                      <th>Time</th>
+                                      <th><input type="checkbox" class="i-checks" ng-model="master" name="input[]" /> </th>
+                                      <th>Query</th>
                                   </tr>
                                   </thead>
                                   <tbody>
                                   <tr>
-                                      <td>
-                                        <input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
-                                      <td>
-                                        Question 1: Lerem ipsum dolor sit amet,consectetur adipiscing elit.
-                                      </td>
-                                      <td class="tags">
-                                        <span class="label">ENROID</span>
-                                        <span class="label">AGE</span>
-                                        <span class="label">SEX</span>
-                                        <span class="label">REGION</span>
-                                      </td>
-                                      <td>
-                                        10/8/16
+                                      <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
+                                      <td>Question 1: Lerem ipsum dolor sit amet,
+
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+
+                                        consectetur adipiscing elit
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
                                       </td>
                                   </tr>
 
-                                  <tr>
-                                      <td>
-                                        <input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
-                                      <td>
-                                        Question 2: Lerem ipsum dolor sit amet,consectetur adipiscing elit
-                                      </td>
-                                      <td class="tags">
-                                        <span class="label">REGION</span>
-                                        <span class="label">EESTATU</span>
-                                        <span class="label">SEX</span>
-                                        <span class="label">PREDIAGFN</span>
-                                      </td>
-                                      <td>
-                                        10/8/16
-                                      </td>
-                                  </tr>
                                   <tr>
                                       <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
-                                      <td>
-                                        Question 3: Lerem ipsum dolor sit amet,consectetur adipiscing elit
-                                      </td>
-                                      <td class="tags">
-                                        <span class="label">EESTATU</span>
-                                        <span class="label">PLANTYP</span>
-                                        <span class="label">REGION</span>
-                                        <span class="label">INDEXDT</span>
-                                      </td>
-                                      <td>
-                                        10/8/16
+                                      <td>Question 2: Lerem ipsum dolor sit amet,
+
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+
+                                        consectetur adipiscing elit
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
                                       </td>
                                   </tr>
+
                                   <tr>
                                       <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
-                                      <td>
-                                        Question 4: Lerem ipsum dolor sit amet,consectetur adipiscing elit
-                                      </td>
-                                      <td class="tags">
-                                        <span class="label">DATASET</span>
-                                        <span class="label">AGE</span>
-                                        <span class="label">SEX</span>
-                                        <span class="label">REGION</span>
-                                      </td>
-                                      <td>
-                                        10/8/16
+                                      <td>Question 3: Lerem ipsum dolor sit amet,
+
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+
+                                        consectetur adipiscing elit
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
                                       </td>
                                   </tr>
 
+                                  <tr>
+                                      <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
+                                      <td>Question 4: Lerem ipsum dolor sit amet,
 
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+
+                                        consectetur adipiscing elit
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+                                      </td>
+                                  </tr>
+
+                                  <tr>
+                                      <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
+                                      <td>Question 5: Lerem ipsum dolor sit amet,
+
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+
+                                        consectetur adipiscing elit
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+                                      </td>
+                                  </tr>
+
+                                  <tr>
+                                      <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
+                                      <td>Question 6: Lerem ipsum dolor sit amet,
+
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+
+                                        consectetur adipiscing elit
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+                                      </td>
+                                  </tr>
+
+                                  <tr>
+                                      <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
+                                      <td>Question 7: Lerem ipsum dolor sit amet,
+
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+
+                                        consectetur adipiscing elit
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+                                      </td>
+                                  </tr>
+
+                                  <tr>
+                                      <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
+                                      <td>Question 8: Lerem ipsum dolor sit amet,
+
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+
+                                        consectetur adipiscing elit
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+                                      </td>
+                                  </tr>
+
+                                  <tr>
+                                      <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
+                                      <td>Question 9: Lerem ipsum dolor sit amet,
+
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+
+                                        consectetur adipiscing elit
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+                                      </td>
+                                  </tr>
+
+                                  <tr>
+                                      <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
+                                      <td>Question 10: Lerem ipsum dolor sit amet,
+
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+
+                                        consectetur adipiscing elit
+                                        <select id="query-dropdown">
+                                          <option value="0"></option>
+                                          <option value="1">parameter 1</option>
+                                          <option value="2">parameter 2</option>
+                                          <option value="3">parameter 3</option>
+                                        </select>
+                                      </td>
+                                  </tr>
                                 </tbody>
                             </table>
 
@@ -435,7 +304,17 @@
               </div>
 
           </div>
-      </div>
+
+
+
+            <div class="footer fixed">
+                <div class="pull-right">
+                    <button type="button" class="btn btn-w-m btn-primary" id="submitBtn">Submit</button>
+                </div>
+                <div class="support">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i> Contact Axtria Support
+                </div>
+            </div>
 
         </div>
         </div>

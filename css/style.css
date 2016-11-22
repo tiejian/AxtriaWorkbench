@@ -1,41 +1,6 @@
 @import url("//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en");
 
 
-
-#query{
-  margin-top: 100px;
-}
-
-
-#data-table{
-  max-height: 500px;
-  overflow: auto;
-}
-
-#criteria-table{
-  max-height: 500px;
-  overflow: auto;
-}
-
-#history-table{
-  margin-top: -40px;
-}
-
-
-
-#side-menu{
-  position: fixed;
-}
-
-#logo-small{
-  margin-right: 30px;
-  margin-top: 10px;
-}
-
-#deleteBtn{
-  margin-top: -5px;
-}
-
 #submitBtn{
   width: 150px;
 }
@@ -79,16 +44,10 @@
 
 #forget-password{
   text-align: right;
-  margin-left: 70px;
+  margin-left: 80px;
   font-size: 1.1em;
-  color: gray;
 }
 
-#logo-big{
-  width:350px;
-  margin-left: -30px;
-  margin-bottom: -20px;
-}
 
 #query-dropdown{
   width: auto;
@@ -1758,12 +1717,9 @@ table.dataTable thead .sorting:after {
 .input-s-lg {
   width: 250px;
 }
-
 .i-checks {
-  margin-left: 10px;
-  size: 2em;
+  padding-left: 0;
 }
-
 .form-control,
 .single-line {
   background-color: rgba(3, 184, 103, 0.3);;
@@ -3115,7 +3071,7 @@ body.body-small .footer.fixed {
 }
 .ibox-content.text-box {
   padding-bottom: 0px;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 .border-left-right {
   border-left: 1px solid #e7eaec;
@@ -3223,7 +3179,7 @@ code {
 .ibox-content {
   background-color: #ffffff;
   color: inherit;
-  padding: 15px 15px 15px 15px;
+  padding: 15px 20px 20px 20px;
   border-color: #e7eaec;
   border-image: none;
   border-style: solid solid none;
