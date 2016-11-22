@@ -1,6 +1,15 @@
 @import url("//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en");
 
 
+#report-border{
+  border-color: #FFF;
+}
+
+#report-tab{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
 #side-menu-fix{
   position: fixed;
 }
@@ -29,6 +38,24 @@
 #deleteBtn{
   margin-top: -5px;
 }
+
+#inputform{
+    background-color: rgba(3, 184, 103, 0.3);
+    background-image: none;
+    border: none;
+
+    display: block;
+    padding: 11px 30px;
+    margin-top: 30px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+    height: 10%;
+    font-size: 14px;
+    color: #FFFFFF;
+    border-radius: 20px;
+}
+
+
 
 
 #submitBtn{
@@ -165,7 +192,7 @@ h5 {
 .dropdown-menu {
   border: medium none;
   border-radius: 3px;
-  box-shadow: 0 0 3px rgba(86, 96, 117, 0.7);
+  box-shadow: 0 0 3px #FFF;
   display: none;
   float: left;
   font-size: 12px;
@@ -1752,19 +1779,16 @@ table.dataTable thead .sorting:after {
 }
 .form-control,
 .single-line {
-  background-color: rgba(3, 184, 103, 0.3);;
+  background-color: #FFF;
   background-image: none;
-  border: none;
-  border-radius: 1px;
+  border:1px solid  #e5e6e7;
 
   display: block;
-  padding: 11px 30px;
-  margin-top: 30px;
+  padding: 6px 12px;
   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
   width: 100%;
   height: 10%;
   font-size: 14px;
-  color: #FFFFFF;
   border-radius: 20px;
 }
 .form-control:focus,
