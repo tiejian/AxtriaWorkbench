@@ -1,6 +1,36 @@
 @import url("//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en");
 
 
+
+#data-table{
+  max-height: 500px;
+  overflow: auto;
+}
+
+#criteria-table{
+  max-height: 500px;
+  overflow: auto;
+}
+
+#history-table{
+  margin-top: -40px;
+}
+
+
+#side-menu-fix{
+  position: fixed;
+}
+
+#logo-small{
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+#deleteBtn{
+  margin-top: -5px;
+}
+
+
 #submitBtn{
   width: 150px;
 }
