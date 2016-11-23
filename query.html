@@ -85,105 +85,59 @@
                               <tbody>
                               <tr id="query">
                                   <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
-                                  <td>Question 1: Lerem ipsum dolor sit amet,
-
-                                    <select id="query-dropdown">
-                                      <option value="0"></option>
-                                      <option value="1">parameter 1</option>
-                                      <option value="2">parameter 2</option>
-                                      <option value="3">parameter 3</option>
+                                  <td>Question 1: Search for patients with at least
+                                    <input type="text" name="minNumberOfDx" id="minNumberOfDx" value="" />
+                                    (diagnosis code) in dataset(s)
+                                    <select multiple>
+                                      <option value = "table_s">Inpatient services table</option>
+                                      <option value = "table_o">Outpatient services table</option>
                                     </select>
+                                    .
+                                  </td>
+                              </tr>
 
-                                    consectetur adipiscing elit
-                                    <select id="query-dropdown">
-                                      <option value="0"></option>
-                                      <option value="1">parameter 1</option>
-                                      <option value="2">parameter 2</option>
-                                      <option value="3">parameter 3</option>
+                              <tr>
+                                  <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
+                                  <td>Question 2: Search for patients enrolled with at least
+                                    <input type="text" name="minMonths" id="minMonths" value="" />
+                                    months, or
+                                    <input type="text" name="minDays" id="minDays" value="" />
+                                    days of continuous enrollment prior to the first heart failure diagnosis
+                                    in the period of study.
+                                  </td>
+                              </tr>
+
+                              <tr>
+                                  <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
+                                  <td>Question 3: Limit that gaps of fewer than
+                                    <input type="text" name="minGap" id="minGap" value="" />
+                                    days in enrollment will not be considered to be disenrollment
+                                    (due to administrative gaps, etc.)
+                                  </td>
+                              </tr>
+
+                              <tr>
+                                  <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
+                                  <td>Question 4: Create index date
+                                    <input type="text" name="indexDate" id="indexDate" value="" />
+                                    (format: mm/dd/yyyy) to identify period of study for dataset(s)
+                                    <select multiple>
+                                      <option value = "table_s">Inpatient services table</option>
+                                      <option value = "table_o">Outpatient services table</option>
                                     </select>
                                   </td>
                               </tr>
 
                               <tr>
                                   <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
-                                  <td>Question 2: Lerem ipsum dolor sit amet,
-
-                                    <select id="query-dropdown">
-                                      <option value="0"></option>
-                                      <option value="1">parameter 1</option>
-                                      <option value="2">parameter 2</option>
-                                      <option value="3">parameter 3</option>
-                                    </select>
-
-                                    consectetur adipiscing elit
-                                    <select id="query-dropdown">
-                                      <option value="0"></option>
-                                      <option value="1">parameter 1</option>
-                                      <option value="2">parameter 2</option>
-                                      <option value="3">parameter 3</option>
-                                    </select>
-                                  </td>
-                              </tr>
-
-                              <tr>
-                                  <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
-                                  <td>Question 3: Lerem ipsum dolor sit amet,
-
-                                    <select id="query-dropdown">
-                                      <option value="0"></option>
-                                      <option value="1">parameter 1</option>
-                                      <option value="2">parameter 2</option>
-                                      <option value="3">parameter 3</option>
-                                    </select>
-
-                                    consectetur adipiscing elit
-                                    <select id="query-dropdown">
-                                      <option value="0"></option>
-                                      <option value="1">parameter 1</option>
-                                      <option value="2">parameter 2</option>
-                                      <option value="3">parameter 3</option>
-                                    </select>
-                                  </td>
-                              </tr>
-
-                              <tr>
-                                  <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
-                                  <td>Question 4: Lerem ipsum dolor sit amet,
-
-                                    <select id="query-dropdown">
-                                      <option value="0"></option>
-                                      <option value="1">parameter 1</option>
-                                      <option value="2">parameter 2</option>
-                                      <option value="3">parameter 3</option>
-                                    </select>
-
-                                    consectetur adipiscing elit
-                                    <select id="query-dropdown">
-                                      <option value="0"></option>
-                                      <option value="1">parameter 1</option>
-                                      <option value="2">parameter 2</option>
-                                      <option value="3">parameter 3</option>
-                                    </select>
-                                  </td>
-                              </tr>
-
-                              <tr>
-                                  <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" name="input[]" aria-label="Slave input"></td>
-                                  <td>Question 5: Lerem ipsum dolor sit amet,
-
-                                    <select id="query-dropdown">
-                                      <option value="0"></option>
-                                      <option value="1">parameter 1</option>
-                                      <option value="2">parameter 2</option>
-                                      <option value="3">parameter 3</option>
-                                    </select>
-
-                                    consectetur adipiscing elit
-                                    <select id="query-dropdown">
-                                      <option value="0"></option>
-                                      <option value="1">parameter 1</option>
-                                      <option value="2">parameter 2</option>
-                                      <option value="3">parameter 3</option>
+                                  <td>Question 5: Include patients who are at least
+                                    <input type="text" name="minAge" id="minAge" value="" />
+                                    on the index date in dataset(s)
+                                    <select multiple>
+                                      <option value = "table_s">Inpatient services table</option>
+                                      <option value = "table_o">Outpatient services table</option>
+                                      <option value = "table_d">Outpatient drug claims table</option>
+                                      <option value = "table_t">Enrollment details table</option>
                                     </select>
                                   </td>
                               </tr>
