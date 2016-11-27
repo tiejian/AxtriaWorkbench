@@ -2,6 +2,7 @@
 ### Installation Guide
 
 1. Install Python and Node.js
+
 2. Install impyla
 ```shell
 pip install impyla
