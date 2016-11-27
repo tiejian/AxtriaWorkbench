@@ -1,0 +1,24 @@
+{
+  "name": "axtria-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiejian/AxtriaApp.git"
+  },
+  "author": "Tiejian Zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiejian/AxtriaApp/issues"
+  },
+  "homepage": "https://github.com/tiejian/AxtriaApp#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "python-shell": "^0.4.0",
+    "socket.io": "^1.6.0"
+  }
+}
