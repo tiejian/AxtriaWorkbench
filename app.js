@@ -48,7 +48,7 @@ axtriaApp.controller('mainController', ['$scope', '$location', function($scope, 
       gapDays: $scope.inputData.gapDays,
       srcTable: $scope.inputData.srcTable,
     };
-    alert(JSON.stringify(data));
+    //alert(JSON.stringify(data));
     socket.emit('query', data);
   }
 
