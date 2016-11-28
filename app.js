@@ -49,7 +49,7 @@ axtriaApp.controller('mainController', ['$scope', '$location', function($scope, 
       srcTable: $scope.inputData.srcTable,
     };
     alert(JSON.stringify(data));
-    //socket.emit('query', data);
+    socket.emit('query', data);
   }
 
   socket.on('cohort', function(res) {
