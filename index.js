@@ -48,7 +48,7 @@ function queryBusinessRuleA(data) {
 }
 
 var queryBusinessRuleBC = function(data) {
-  var deferred = Q.defer();
+  //var deferred = Q.defer();
   // TODO: WHere is the index_period_start and index_period_end???
   const contDays = data['contEnroll'];
   const gapDays = data['gapDays'];
