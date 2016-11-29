@@ -13,6 +13,7 @@ pip install impyla
 Open terminal in the 'AxtriaWorkbench/' folder, then type
 ```shell
 npm install
+sudo npm install -g nodemon
 ```
 
 * Start express server
