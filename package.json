@@ -2,9 +2,10 @@
   "name": "axtria-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
@@ -17,9 +18,11 @@
   },
   "homepage": "https://github.com/tiejian/AxtriaApp#readme",
   "dependencies": {
-    "Q": "0.0.1",
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
+    "express-session": "^1.14.2",
     "python-shell": "^0.4.0",
     "socket.io": "^1.6.0"
-  }
+  },
+  "devDependencies": {}
 }

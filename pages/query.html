@@ -20,14 +20,10 @@
             <div class="table-responsive">
               <table class="table table-striped" id="query-table">
                 <thead>
-                  <tr>
-                    <th><input type="checkbox" class="i-checks" ng-model="master" style="visibility: hidden" /></th>
-                    <th>Query from <select class="selectpicker" ng-model="inputData.srcTable" ng-options="item for item in inputData.srcItems"></select></th>
-                  </tr>
+                  <tr><th>Query from <select class="selectpicker" ng-model="inputData.srcTable" ng-options="item for item in inputData.srcItems"></select></th></tr>
                 </thead>
                 <tbody>
                   <tr id="query">
-                    <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" aria-label="Slave input"></td>
                     <td> Question 1: Search for patients with diagnosis code <select class="selectpicker">
                       <option value="HF">HF</option>
                     </select>.
@@ -35,7 +31,6 @@
                   </tr>
 
                   <tr>
-                    <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" aria-label="Slave input"></td>
                     <td>Question 2: Search for patients enrolled with at least
                       <input type="number" ng-model="inputData.xz" ng-value="{{ inputData.xz }}" />
                       <select class="selectpicker" ng-model="inputData.monOrDay" ng-options="item for item in inputData.monItems"></select> of continuous enrollment prior to the first diagnosis in the period of study.
@@ -43,21 +38,18 @@
                   </tr>
 
                   <tr>
-                    <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" aria-label="Slave input"></td>
                     <td>Question 3: Limit that gaps of fewer than
                       <input type="number" ng-model="inputData.gapDays" ng-value="{{ inputData.gapDays }}" /> days in enrollment will not be considered to be disenrollment (due to administrative gaps, etc.).
                     </td>
                   </tr>
 
                   <tr>
-                    <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" aria-label="Slave input"></td>
                     <td>Question 4: Create index date
                       <input type="date" ng-model="inputData.indexDate" ng-value="{{inputData.indexDate}}" placeholder="yyyy-MM-dd" /> to identify period of study.
                     </td>
                   </tr>
 
                   <tr>
-                    <td><input id="checkSlave" type="checkbox" class="i-checks" ng-checked="master" aria-label="Slave input"></td>
                     <td>Question 5: Include patients who are at least
                       <input type="number" ng-model="inputData.minAge" ng-value="{{ inputData.minAge }}" /> years old on the index date.
                     </td>
