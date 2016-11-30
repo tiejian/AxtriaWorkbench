@@ -10,7 +10,7 @@ pip install impyla
 
 * Start express server
 ```shell
-node server.js
+npm start
 ```
 
 * open chrome browser and go to localhost:3000 (Now you should see the webpages)
