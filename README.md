@@ -4,12 +4,11 @@
 * Install Python 2.7 and Node.js 6.9
 
 * Install impyla
-
 ```shell
 pip install impyla
+```
 
 * Start express server
-
 ```shell
 node server.js
 ```
