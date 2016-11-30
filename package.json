@@ -1,22 +1,22 @@
 {
-  "name": "axtria-app",
+  "name": "axtria-workbench",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "description": "Axtria Big Data Analytics Workbench",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tiejian/AxtriaApp.git"
+    "url": "https://github.com/HsuanHuang/AxtriaWorkbench.git"
   },
-  "author": "Tiejian Zhang",
-  "license": "ISC",
+  "author": "Tiejian Zhang, Hsuan Huang, Yue Xu, Kaiwen Zhong",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tiejian/AxtriaApp/issues"
+    "url": "https://github.com/HsuanHuang/AxtriaWorkbench/issues"
   },
-  "homepage": "https://github.com/tiejian/AxtriaApp#readme",
+  "homepage": "https://github.com/HsuanHuang/AxtriaWorkbench#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
