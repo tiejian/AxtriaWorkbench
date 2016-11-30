@@ -10,6 +10,7 @@ pip install impyla
 
 * Start express server
 ```shell
+(open terminal in folder './AxtriaWorkbench/')
 npm start
 ```
 
