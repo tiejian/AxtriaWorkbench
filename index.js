@@ -109,12 +109,12 @@ function queryBusinessRuleE(data) {
   return lines;
 }
 
-function queryCOHORT(data) {
+function queryFinalResult(data) {
   const lines = [
     `drop table if exists cohort;`,
-    'create table if not exists cohort as select enrolid, index_date, age, sex, region, plantyp, eestatu, source as dataset, prediagfn from interim4 where datediff(index_date,dtstart)>=365 and index_date between dtstart and dtend;',
-    //`drop table if exists kick_out_cohort;`,
-    //`create table if not exists kick_out_cohort as select enrolid,index_date, age, sex, region, plantyp, eestatu, source as dataset, prediagfn from interim4 where datediff(index_date,dtstart)<365 OR index_date not between dtstart and dtend;`
+    `create table if not exists cohort as select enrolid, index_date, age, sex, region, plantyp, eestatu, source as dataset, prediagfn from interim4 where datediff(index_date,dtstart)>=365 and index_date between dtstart and dtend`,
+    `drop table if exists kick_out_cohort;`,
+    `create table if not exists kick_out_cohort as select enrolid,index_date, age, sex, region, plantyp, eestatu, source as dataset, prediagfn from interim4 where datediff(index_date,dtstart)<365 OR index_date not between dtstart and dtend`
   ];
   return lines;
 }
@@ -125,29 +125,27 @@ io.on('connection', function(socket) {
   socket.on('query', function(data) {
     console.log(data);
 
-    //queryBusinessRuleA(data);
-    //queryBusinessRuleD(data);
-    //queryBusinessRuleBC(data);
-    //queryBusinessRuleE(data);
     const lines = queryBusinessRuleA(data)
       .concat(queryBusinessRuleD(data))
       .concat(queryBusinessRuleBC(data))
       .concat(queryBusinessRuleE(data))
-      .concat(queryCOHORT(data));
+      .concat(queryFinalResult(data));
 
     var sql = '';
     for (let i = 0; i < lines.length; i++) {
+      // remove all inner line breaks
       sql += lines[i].replace(/(\r\n|\n|\r)/gm, "") + "\n";
     }
-    //console.log(sql + 'select * from cohort limit 25;');
-    //return;
+    var condition = "dataset = 's' or dataset = 'o'";
+    if (data['srcTable'] === 'inpatient_services_table') condition = "dataset = 's'";
+    if (data['srcTable'] === 'outpatient_services_table') condition = "dataset = 'o'";
 
-    const pyshell = new PythonShell('connect.py');
-    // TODO: Remove the limit operator. This is for demo only
-    pyshell.send(sql + '\nselect * from cohort limit 25;');
+    // get COHORT
+    var pyshell = new PythonShell('connect.py');
+    pyshell.send(sql + `select * from cohort where ${condition};`);
     pyshell.on('message', function(res) {
-      console.log(res);
-      cohort = JSON.parse(res);
+      let cohort = JSON.parse(res);
+      console.log(cohort.length);
       socket.emit('cohort', cohort);
     });
     pyshell.end(function(err) {
@@ -155,21 +153,21 @@ io.on('connection', function(socket) {
       else console.log('finished fetching cohort');
     });
 
-    /*pyshell.send('select * from kickout limit 25;');
+    // get kickout
+    pyshell = new PythonShell('connect.py');
+    pyshell.send(`select * from kick_out_cohort where ${condition};`);
     pyshell.on('message', function(res) {
-      kickout = JSON.parse(res);
+      let kickout = JSON.parse(res);
+      console.log(kickout.length);
       socket.emit('kickout', kickout);
     });
     pyshell.end(function(err) {
       if (err) console.log(err);
       else console.log('finished fetching kickout');
-    });*/
+    });
   });
 
   io.on('disconnect', function(socket) {
     console.log('disconnected');
   });
-
-
-
 });
