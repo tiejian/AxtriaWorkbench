@@ -1,7 +1,9 @@
 # AxtriaWorkbench
 ### Installation Guide
 
-* Install Python 2.7 and Node.js 6.9
+* Install Python 2.7 and Node.js (version >= 6)
+
+* Open terminal in folder './AxtriaWorkbench/'
 
 * Install impyla
 ```shell
@@ -10,8 +12,7 @@ pip install impyla
 
 * Start express server
 ```shell
-(open terminal in folder './AxtriaWorkbench/')
 npm start
 ```
 
-* open chrome browser and go to localhost:3000 (Now you should see the webpages)
+* Open chrome browser and go to localhost:3000 (Now you should see the webpages)
